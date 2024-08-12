@@ -1,0 +1,19 @@
+:root{
+  --fundo: linear-gradient(310deg, #0000FF 0%, #0505d9 100%);
+  --azul: #0000FF;
+  --azul-escuro: #001D5C;
+  --verde: #00BF63;
+  --branco: #FFFFFF;
+  --cinza: #D9D9D9;
+  --creme: #FBF2E7;
+  --fonte-primaria: 'Montserrat', sans-serif;
+  --fonte-secundaria: "Poppins", sans-serif;
+  --preto: #000000;
+  --fundo-sidebar: linear-gradient(180deg, #0000FF 0%, #0000DD 25%, #0303ab 100%);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

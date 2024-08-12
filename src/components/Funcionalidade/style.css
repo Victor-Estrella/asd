@@ -1,0 +1,36 @@
+.container__funcionalidade{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.container__titulo{
+    display: flex;
+    justify-content: start;
+    width: 100%;
+}
+
+.funcionalidade__titulo{
+    font-size: 64px;
+    color: var(--verde);
+    font-weight: bold;
+    margin: 1.5em auto 0.25em;
+}
+
+.funcionalidade__texto{
+    font-size: 24px;
+    color: var(--azul-escuro);
+    background-color: var(--cinza);
+    display: flex;
+    width: 48em;
+    padding: 1em;
+
+}
+.funcionalidade__texto img{
+    margin: 0 40px 0 80px;
+}
+
+.funcionalidade__texto span{
+    display: flex;
+}

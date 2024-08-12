@@ -1,0 +1,28 @@
+.container__sobre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.container__titulo{
+    display: flex;
+    justify-content: start;
+    width: 100%;
+}
+
+.sobre__titulo{
+    font-size: 64px;
+    color: var(--verde);
+    font-weight: bold;
+    margin: 1.5em 0 0.5em 0.25em;
+}
+
+.sobre__texto{
+    font-size: 24px;
+    color: var(--azul-escuro);
+    background-color: var(--cinza);
+    display: flex;
+    width: 48em;
+    padding: 1.5em;
+}
