@@ -1,10 +1,10 @@
-import Header from './components/Header'
-import Sobre from './components/Sobre'
-import Funcionalidade from './components/Funcionalidade'
-import Perguntas from './components/Perguntas'
-import Integrantes from './components/Integrantes'
-import Contato from './components/Contato'
-import Footer from './components/Footer'
+import Header from './components/Header/Header'
+import Sobre from './components/Sobre/Sobre'
+import Funcionalidade from './components/Funcionalidade/Funcionalidade'
+import Perguntas from './components/Perguntas/Perguntas'
+import Integrantes from './components/Integrantes/Integrantes'
+import Contato from './components/Contato/Contato'
+import Footer from './components/Footer/Footer'
 import './App.css'
 
 function App() {
