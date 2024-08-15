@@ -8,7 +8,7 @@
   --creme: #FBF2E7;
   --fonte-primaria: 'Montserrat', sans-serif;
   --preto: #000000;
-  --fundo-sidebar: linear-gradient(180deg, #0000FF 0%, #0000DD 25%, #0303ab 100%);
+  --fundo-header: linear-gradient(180deg, #0000FF 0%, #0000DD 25%, #0303ab 100%);
 }
 
 *{

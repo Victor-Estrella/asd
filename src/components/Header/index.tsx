@@ -8,7 +8,7 @@ export default function Header(){
     return(
         <header>
             <nav>
-                <ul className="lista-sidebar">
+                <ul className="lista-header">
                     <li>
                         <button className="item__link-publicacao">
                             <img src={Chatbot} alt=""/>
