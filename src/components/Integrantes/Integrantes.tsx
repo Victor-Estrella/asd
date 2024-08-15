@@ -25,10 +25,12 @@ export default function Integrantes(){
                 </div>
                 <div className="informacoes__integrantes">
                     <img src={Henrique} alt="Victor Henrique" className="aluno"/>
-                    <p>Victor Henrique Estrella Carracci</p>
-                    <p>RM:556206</p>
-                    <p>1TDSPH</p>
-                    <a href="https://github.com/Victor-Estrella" target="_blank"><img src={Github} alt="Ícone github" className="github"/></a>
+                    <div className="asdasda">
+                        <p>Victor Henrique Estrella Carracci</p>
+                        <p>RM:556206</p>
+                        <p>1TDSPH</p>
+                        <a href="https://github.com/Victor-Estrella" target="_blank"><img src={Github} alt="Ícone github" className="github"/></a>
+                    </div>
                 </div>     
             </div>
         </section>

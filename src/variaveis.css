@@ -9,10 +9,12 @@
   --fonte-primaria: 'Montserrat', sans-serif;
   --preto: #000000;
   --fundo-header: linear-gradient(180deg, #0000FF 0%, #0000DD 25%, #0303ab 100%);
+  
 }
 
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: var(--fonte-primaria);
 }

@@ -1,13 +1,12 @@
 .container__sobre{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    height: 100vh;
+    align-items: center; 
 }
 
 .container__titulo{
     display: flex;
-    justify-content: start;
+    justify-content: center;
     width: 100%;
 }
 
