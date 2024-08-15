@@ -1,9 +1,0 @@
-.containerDiv{
-    width: 99.2vw;
-    display: flex;
-    background: var(--creme);
-    align-items: center;
-    flex-direction: column;
-    font-family: var(--fonte-primaria);
-    overflow: hidden;
-}
