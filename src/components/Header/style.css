@@ -70,3 +70,23 @@ header{
 .item__link-publicacao:focus{
     outline: none;
 }
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+  
+.tooltip .tooltiptext {
+    visibility: hidden;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    padding: 5px 5px;
+    position: absolute;
+    z-index: 1;
+    border-radius: 16px;
+    margin: 50px 0 0 75px;;
+}
+  
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}

@@ -12,14 +12,14 @@
 }
 
 .funcionalidade__titulo{
-    font-size: 64px;
+    font-size: 72px;
     color: var(--verde);
     font-weight: bold;
     margin: 1.5em auto 0.25em;
 }
 
 .funcionalidade__texto{
-    font-size: 24px;
+    font-size: 28px;
     color: var(--azul-escuro);
     background-color: var(--cinza);
     display: flex;

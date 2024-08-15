@@ -9,6 +9,7 @@
 
 .container__post-it{
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     margin-bottom: 40px;
     justify-content: space-evenly;
@@ -20,6 +21,7 @@
     width:17em;
     padding:1em;
     box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+    font-size: 20px;
 }
 
 .primeiro{
@@ -43,7 +45,7 @@
 }
 
 .pergunta__titulo{
-    font-size: 40px;
+    font-size: 48px;
     color: var(--verde);
     font-weight: 500;
     margin: 40px;

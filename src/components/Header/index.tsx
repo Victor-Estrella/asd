@@ -4,33 +4,33 @@ import Logout from "./assets/logout.svg"
 import Sobre from "./assets/sobre.svg"
 import './style.css'
 
-export default function Cabecalho(){
+export default function Header(){
     return(
         <header>
             <nav>
                 <ul className="lista-sidebar">
                     <li>
                         <button className="item__link-publicacao">
-                            <img src={Chatbot} alt=""/>    
-                            <span>Chatbot</span>
+                            <img src={Chatbot} alt=""/>
+                            <span>Chatbot</span>    
                         </button>
                     </li>
                     <li>
-                        <a className="item__link " href="./pagina-principal.html">
+                        <a className="item__link tooltip" href="">
                             <img src={Funcionalidade} alt=""/>
-                            <span>Visão Geral</span>
+                            <span className="tooltiptext">Funcionalidade</span>
                         </a>
                     </li>
                     <li>
-                        <a className="item__link item__link--ativo" href="./sobre-nos.html">
+                        <a className="item__link tooltip" id="item__link--ativo" href="">
                             <img src={Sobre} alt=""/>
-                            <span>Sobre nós</span>
+                            <span className="tooltiptext">Sobre</span>
                         </a>
                     </li>
                     <li>
-                        <a className="item__link">
+                        <a className="item__link  tooltip">
                             <img src={Logout} alt=""/>
-                            <span>Sair</span>
+                            <span className="tooltiptext">Sair</span>
                         </a>
                     </li>
                 </ul>

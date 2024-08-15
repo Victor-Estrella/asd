@@ -2,7 +2,7 @@
     font-size: 40px;
     color: var(--verde);
     font-weight: 500;
-    margin: 40px;
+    margin: 48px;
 }
 
 .integrantes__container{
@@ -33,4 +33,5 @@
 .informacoes__integrantes p{
     font-size: 18px;
     margin: 0.5em 0 0 5px;
+    font-weight: 400;
 }

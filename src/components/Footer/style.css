@@ -1,0 +1,136 @@
+.content1 {
+  position: relative;
+  margin: 130px auto;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.content1 .text {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #202020;
+}
+
+.content1 .p {
+  font-size: 2.1875rem;
+  font-weight: 600;
+  color: #202020;
+}
+
+footer {
+  width: 100%;
+  background: #111;
+}
+
+.main-content {
+  display: flex;
+  color: #d9d9d9;
+}
+
+.main-content .box {
+  flex-basis: 50%;
+  padding: 10px 20px;
+}
+
+.box h2 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.box .content {
+  margin: 20px 0 0 0;
+  position: relative;
+}
+
+.box .content div{
+  margin-top: 30px;
+}
+
+.box .content:before {
+  position: absolute;
+  content: "";
+  top: -10px;
+  height: 2px;
+  width: 100%;
+  background: #1a1a1a;
+}
+
+.box .content:after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 15%;
+  background: #020fff;
+  top: -10px;
+}
+
+.direita .content .text {
+  font-size: 1.06rem;
+  font-weight: 500;
+  margin: 12px 0 8px 0;
+}
+
+.esquerda form .text {
+  font-size: 1.0625rem;
+  margin: 12px 0 8px 0;
+  color: #888888;
+}
+
+.esquerda form .msg {
+  margin-top: 10px;
+}
+
+.esquerda form input,
+.esquerda form textarea {
+  width: 100%;
+  font-size: 1.0625rem;
+  background: #151515;
+  padding-left: 10px;
+  border: 1px solid #222222;
+}
+
+.esquerda form input {
+  height: 35px;
+}
+
+.esquerda form .btn-submit {
+  margin-top: 10px;
+}
+
+.esquerda form .btn-submit button {
+  height: 40px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: var(--azul);
+  color: var(--branco);
+  font-size: 1.0625rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.esquerda form .btn-submit button:hover {
+  background: #000;
+}
+
+.bottom center {
+  padding: 5px;
+  font-size: 0.9375rem;
+  background: #151515;
+}
+
+.bottom center span {
+  color: #656565;
+}
+
+.parcerias{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.icone {
+  margin-top: 2em;
+  width: 15em;
+}
