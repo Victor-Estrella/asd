@@ -4,7 +4,7 @@
     align-items: center; 
 }
 
-.container__titulo{
+.container__titulo--sobre{
     display: flex;
     justify-content: center;
     width: 100%;
@@ -12,7 +12,7 @@
 
 .sobre__titulo{
     font-size: 72px;
-    color: var(--verde);
+    color: var(--azul-claro);
     font-weight: bold;
     margin: 1.5em 0 0.5em 0.25em;
 }

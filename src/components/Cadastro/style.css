@@ -11,7 +11,7 @@ body{
 
 h1{
     font-size: 6rem;
-    color: var(--verde);
+    color: var(--azul-claro);
     font-weight: bold;
     margin: 0;
 }
@@ -237,7 +237,7 @@ input{
 }
 
 .overlay{
-    background-color: var(--verde);
+    background-color: var(--azul-claro);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0 0;

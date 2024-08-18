@@ -4,7 +4,7 @@ import './style.css'
 export default function Funcionalidade() {
     return(
         <section className="container__funcionalidade">
-            <div className="container__titulo">
+            <div className="container__titulo--funcionalidade">
                 <h1 className="funcionalidade__titulo">Funcionalidade</h1>
             </div>
             <div className="funcionalidade">

@@ -3,7 +3,7 @@ import './style.css'
 export default function Sobre() {
     return (
         <section className="container__sobre">
-            <div className="container__titulo">
+            <div className="container__titulo--sobre">
                 <h1 className="sobre__titulo">Sobre nós</h1>
             </div>
             <div className="sobre">
