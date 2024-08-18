@@ -1,4 +1,4 @@
-body{
+main{
     display: flex;
     background: var(--fundo);
     justify-content: center;

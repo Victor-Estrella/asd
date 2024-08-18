@@ -2,6 +2,7 @@ import Funcionalidade from "./assets/feed.svg"
 import Chatbot from "./assets/chatbot.svg"
 import Logout from "./assets/logout.svg"
 import Sobre from "./assets/sobre.svg"
+import { Link } from 'react-router-dom';
 import './style.css'
 
 export default function Header(){
@@ -16,16 +17,16 @@ export default function Header(){
                         </button>
                     </li>
                     <li>
-                        <a className="item__link tooltip" href="">
+                        <Link className="item__link tooltip" to="/Funcionalidade">
                             <img src={Funcionalidade} alt=""/>
                             <span className="tooltiptext">Funcionalidade</span>
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a className="item__link tooltip" id="item__link--ativo" href="">
+                        <Link className="item__link tooltip" id="item__link--ativo" to="/">
                             <img src={Sobre} alt=""/>
                             <span className="tooltiptext">Sobre</span>
-                        </a>
+                        </Link>
                     </li>
                     <li>
                         <a className="item__link  tooltip">
