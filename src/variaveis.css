@@ -1,20 +1,25 @@
-:root{
-  --fundo: linear-gradient(310deg, #0000FF 0%, #0505d9 100%);
-  --azul: #0000FF;
-  --azul-escuro: #001D5C;
-  --azul-claro: #01a1fc;
-  --branco: #FFFFFF;
-  --cinza: #D9D9D9;
-  --creme: #FBF2E7;
-  --fonte-primaria: 'Montserrat', sans-serif;
-  --preto: #000000;
-  --fundo-header: linear-gradient(180deg, #0000FF 0%, #0000DD 25%, #0303ab 100%);
-  
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --fundo: linear-gradient(310deg, #0000FF 0%, #0505d9 100%);
+    --azul: #0000FF;
+    --azul-escuro: #001D5C;
+    --azul-claro: #01a1fc;
+    --branco: #FFFFFF;
+    --cinza: #D9D9D9;
+    --creme: #FBF2E7;
+    --fonte: 'Montserrat', sans-serif;
+    --preto: #000000;
+    --fundo-header: linear-gradient(180deg, #0000FF 0%, #0000DD 25%, #0303ab 100%);
+  }
 }
 
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: var(--fonte-primaria);
+  font-family: var(--fonte);
 }

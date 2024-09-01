@@ -77,7 +77,7 @@ export default function Cadastro() {
                             </div>
                         </div>
                         <div className="container__botao">
-                            <a href="./pages/pagina-principal.html" className="botao">Entrar</a>
+                            <a href="#" className="botao">Entrar</a>
                         </div>
                     </form>
                 </div>
