@@ -32,21 +32,21 @@ export default function Cadastro() {
                         <div className="formulario">
                             <div className="nome">
                                 <img src={Nome} />
-                                <input type="text" placeholder="Nome Completo" />
+                                <input className='input' type="text" placeholder="Nome Completo" />
                             </div>
 
                             <div className="email">
                                 <img src={Email} />
-                                <input type="email" placeholder="Email" />
+                                <input className='input' type="email" placeholder="Email" />
                             </div>
 
                             <div className="telefone">
                                 <img src={Telefone} />
-                                <input type="text" placeholder="Telefone" />
+                                <input className='input' type="text" placeholder="Telefone" />
                             </div>
                             <div className="senha">
                                 <img src={Senha} />
-                                <input type="password" placeholder="Senha" />
+                                <input className='input' type="password" placeholder="Senha" />
                             </div>
                         </div>
                         <div className="container__botao">
@@ -68,12 +68,12 @@ export default function Cadastro() {
                         <div className="formulario">
                             <div className="email">
                                 <img src={Email} alt="" />
-                                <input type="email" placeholder="Email" />
+                                <input className='input' type="email" placeholder="Email" />
                             </div>
 
                             <div className="senha">
                                 <img src={Senha} alt="" />
-                                <input type="password" placeholder="Senha" />
+                                <input className='input' type="password" placeholder="Senha" />
                             </div>
                         </div>
                         <div className="container__botao">

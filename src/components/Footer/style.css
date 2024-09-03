@@ -1,4 +1,4 @@
-.box .content:before {
+.box:before {
   position: absolute;
   content: "";
   top: -10px;
@@ -7,7 +7,7 @@
   background: #1a1a1a;
 }
 
-.box .content:after {
+.box:after {
   position: absolute;
   content: "";
   height: 2px;
@@ -15,29 +15,3 @@
   background: #020fff;
   top: -10px;
 }
-
-.esquerda .contato input,
-.esquerda .contato textarea {
-  width: 100%;
-  font-size: 1rem;
-  background: #151515;
-  border: 1px solid #222222;
-}
-
-.esquerda .contato input {
-  height: 35px;
-}
-
-.esquerda .contato .btn-submit button {
-  width: 100%;
-  border: none;
-  outline: none;
-  background: var(--azul);
-  color: var(--branco);
-  font-size: 1.0625rem;
-  font-weight: 500;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-

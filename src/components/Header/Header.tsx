@@ -7,7 +7,7 @@ import './style.css'
 
 export default function Header(){
     return(
-        <header className="bg-fundoheader py-10 px-4 max-w-full">
+        <header className="bg-fundoheader py-10 px-4 min-w-screen max-w-screen">
             <nav>
                 <ul className="flex gap-[5.5em] list-none items-center justify-around">
                     <li>
@@ -17,19 +17,19 @@ export default function Header(){
                         </button>
                     </li>
                     <li>
-                        <Link className="group flex gap-[5.5em] list-none items-center justify-around active:scale-95 tracking-widest inline-block relative" to="/Funcionalidade">
+                        <Link className="group flex gap-[5.5em] list-none items-center justify-around active:scale-95 tracking-widest relative" to="/Funcionalidade">
                             <img src={Funcionalidade} alt=""/>
                             <span className="tooltiptext absolute bg-white text-black p-1 rounded-lg z-10 invisible group-hover:visible text-xl">Funcionalidade</span>
                         </Link>
                     </li>
                     <li>
-                        <Link className="group flex gap-[5.5em] list-none items-center justify-around active:scale-95 inline-block relative" id="item__link--ativo" to="/">
+                        <Link className="group flex gap-[5.5em] list-none items-center justify-around active:scale-95 relative" id="item__link--ativo" to="/">
                             <img src={Sobre} alt=""/>
                             <span className="tooltiptext absolute bg-white text-black p-1 rounded-lg z-10 invisible group-hover:visible text-xl">Sobre</span>
                         </Link>
                     </li>
                     <li>
-                        <a className="group flex gap-[5.5em] list-none items-center justify-around active:scale-95 inline-block relative">
+                        <a className="group flex gap-[5.5em] list-none items-center justify-around active:scale-95 relative">
                             <img src={Logout} alt=""/>
                             <span className="tooltiptext absolute bg-white text-black p-1 rounded-lg z-10 invisible group-hover:visible text-xl">Sair</span>
                         </a>
