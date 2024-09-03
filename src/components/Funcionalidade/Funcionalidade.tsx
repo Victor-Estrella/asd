@@ -1,6 +1,5 @@
 import Mecanicos from './assets/mecanicos.svg'
 
-
 export default function Funcionalidade() {
     return(
         <>
