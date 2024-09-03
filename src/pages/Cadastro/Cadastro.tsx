@@ -24,7 +24,7 @@ export default function Cadastro() {
         <main>
             <div className={`container ${rightPanel ? "right-panel-active" : ""}`} id="container">
                 <div className="form-container register-container">
-                    <form action="#">
+                    <form action="#" className='form'>
                         <div className="logo">
                             <img src={Logo} alt="Logo da Descomplica Auto" />
                         </div>
@@ -55,7 +55,7 @@ export default function Cadastro() {
                     </form>
                 </div>
                 <div className="form-container login-container">
-                    <form action="#">
+                    <form action="#" className='form'>
                         <div className="logo">
                             <img src={Logo} alt="Logo da Descomplica Auto" />
                         </div>

@@ -1,38 +1,34 @@
-.direita .content .text {
-  font-size: 1.06rem;
-  font-weight: 500;
-  margin: 12px 0 8px 0;
-}
-
-.esquerda form .text {
-  font-size: 1.0625rem;
-  margin: 12px 0 8px 0;
-  color: #888888;
-}
-
-.esquerda form .msg {
-  margin-top: 10px;
-}
-
-.esquerda form input,
-.esquerda form textarea {
+.box .content:before {
+  position: absolute;
+  content: "";
+  top: -10px;
+  height: 2px;
   width: 100%;
-  font-size: 1.0625rem;
+  background: #1a1a1a;
+}
+
+.box .content:after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 15%;
+  background: #020fff;
+  top: -10px;
+}
+
+.esquerda .contato input,
+.esquerda .contato textarea {
+  width: 100%;
+  font-size: 1rem;
   background: #151515;
-  padding-left: 10px;
   border: 1px solid #222222;
 }
 
-.esquerda form input {
+.esquerda .contato input {
   height: 35px;
 }
 
-.esquerda form .btn-submit {
-  margin-top: 10px;
-}
-
-.esquerda form .btn-submit button {
-  height: 40px;
+.esquerda .contato .btn-submit button {
   width: 100%;
   border: none;
   outline: none;
@@ -44,7 +40,4 @@
   transition: 0.3s;
 }
 
-.esquerda form .btn-submit button:hover {
-  background: #000;
-}
 

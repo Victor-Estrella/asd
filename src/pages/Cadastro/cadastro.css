@@ -131,7 +131,7 @@ button.ghost{
     margin-top: 20px;
 }
 
-form{
+.form{
     background-color:var(--creme);
     display: flex;
     align-items: center;
