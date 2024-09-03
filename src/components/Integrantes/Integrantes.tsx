@@ -24,12 +24,10 @@ export default function Integrantes(){
                 </div>
                 <div className="mt-2.5 bg-transparent border border-[#0000b4d3] rounded-2xl p-6">
                     <img src={Henrique} alt="Victor Henrique" className="w-[21em] h-[29em]"/>
-                    <div className="asdasda">
-                        <p className="text-lg text-black mt-1.5 ml-1.5 font-normal">Victor Henrique Estrella Carracci</p>
-                        <p className="text-lg text-black mt-1.5 ml-1.5 font-normal">RM:556206</p>
-                        <p className="text-lg text-black mt-1.5 ml-1.5 font-normal">1TDSPH</p>
-                        <a href="https://github.com/Victor-Estrella" target="_blank"><img src={Github} alt="Ícone github" className="w-20 mt-1.5 ml-2.5"/></a>
-                    </div>
+                    <p className="text-lg text-black mt-1.5 ml-1.5 font-normal">Victor Henrique Estrella Carracci</p>
+                    <p className="text-lg text-black mt-1.5 ml-1.5 font-normal">RM:556206</p>
+                    <p className="text-lg text-black mt-1.5 ml-1.5 font-normal">1TDSPH</p>
+                    <a href="https://github.com/Victor-Estrella" target="_blank"><img src={Github} alt="Ícone github" className="w-20 mt-1.5 ml-2.5"/></a>
                 </div>     
             </div>
         </section>

@@ -9,6 +9,9 @@ export default {
       boxShadow:{
         'pergunta': '5px 5px 7px rgba(33,33,33,.7)',
       },
+      backgroundImage: {
+        'fundoheader': 'linear-gradient(285deg, #0000FF 0%, #0000DD 25%, #0303ab 100%)'
+      },
       colors: {        
         fundo: 'var(--fundo)',
         azul: 'var(--azul)',
@@ -18,8 +21,7 @@ export default {
         cinza: 'var(--cinza)',
         creme: 'var(--creme)',
         fonte: 'var(--fonte)',
-        preto: 'var(--preto)',
-        fundoheader: 'var(--fundoheader)'
+        preto: 'var(--preto)'
       }
     }
   },
