@@ -13,15 +13,14 @@ export default {
         'fundoheader': 'linear-gradient(285deg, #0000FF 0%, #0000DD 25%, #0303ab 100%)'
       },
       colors: {        
-        fundo: 'var(--fundo)',
-        azul: 'var(--azul)',
-        azulescuro: 'var(--azul-escuro)',
-        azulclaro: 'var(--azul-claro)',
-        branco: 'var(--branco)',
-        cinza: 'var(--cinza)',
-        creme: 'var(--creme)',
-        fonte: 'var(--fonte)',
-        preto: 'var(--preto)'
+        azul: '#0000FF',
+        azulescuro: '#001D5C',
+        azulclaro: '#01a1fc',
+        branco: '#FFFFFF',
+        cinza: '#D9D9D9',
+        creme: '#FBF2E7',
+        fonte: 'Montserrat, sans-serif',
+        preto: '#000000'
       }
     }
   },

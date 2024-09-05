@@ -7,7 +7,7 @@ export default function Footer() {
     <footer className="w-full bg-[#111]">
       <div className="flex text-cinza">
         <div className="basis-1/2 py-2 px-4">
-          <h2 className="text-md font-semibold uppercase pl-4">Contato</h2>
+          <h2 className="text-lg font-semibold uppercase pl-4">Contato</h2>
           <div className="box relative mx-auto py-2 px-4 mt-4">
             <form action="#">
               <div className="mt-4">
@@ -23,13 +23,13 @@ export default function Footer() {
                 <textarea className="w-full pl-2 pt-1 text-[#b9b9b9] bg-[#151515] border-2 border-[#222222] text-lg" rows={2} required></textarea>
               </div>
               <div className="mt-4 flex justify-center">
-                <button className="w-1/2 border-0 outline-none bg-azul text-branco font-medium text-base cursor-pointer transition duration-300" type="submit">Enviar</button>
+                <button className="w-2/6 border-0 outline-none bg-azul text-branco font-medium text-lg cursor-pointer transition duration-300" type="submit">Enviar</button>
               </div>
             </form>
           </div>
         </div>
         <div className="basis-1/2 py-2 px-4">
-          <h2 className="text-md font-semibold uppercase pl-4">Endereço</h2>
+          <h2 className="text-lg font-semibold uppercase pl-4">Endereço</h2>
           <div className="box relative mx-auto py-2 px-4 mt-4">
             <div className="mt-4">
               <span className="font-semibold text-[#7a7a7a] text-lg">R EMILIA MARENGO, 451 - VILA REGENTE FEIJO - SAO PAULO</span>
