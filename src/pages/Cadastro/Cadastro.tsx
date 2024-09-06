@@ -87,12 +87,12 @@ export default function Cadastro() {
                         <div className="overlay-panel overlay-left">
                             <h1 className="title">Bem vindo de volta!</h1>
                             <p>Para se manter conectado conosco por favor faça login com suas informações</p>
-                            <button className="ghost" onClick={loginButton}>Login</button>
+                            <button className="button ghost" onClick={loginButton}>Login</button>
                         </div>
                         <div className="overlay-panel overlay-right">
                             <h1 className="title">Seja bem vindo!</h1>
                             <p>Caso não possua uma conta, faça seu cadastro clicando no botão abaixo</p>
-                            <button className="ghost" onClick={registerButton}>Cadastrar</button>
+                            <button className="button ghost" onClick={registerButton}>Cadastrar</button>
                         </div>
                     </div>
                 </div>

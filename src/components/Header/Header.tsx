@@ -1,41 +1,34 @@
-import Funcionalidade from "./assets/feed.svg"
-import Chatbot from "./assets/chatbot.svg"
-import Logout from "./assets/logout.svg"
-import Sobre from "./assets/sobre.svg"
-import { Link } from 'react-router-dom';
-import './style.css'
+import Funcionalidade from "./assets/feed.svg";
+import Chatbot from "./assets/chatbot.svg";
+import Logout from "./assets/logout.svg";
+import Sobre from "./assets/sobre.svg";
+import { Link } from "react-router-dom";
+import "./header.css";
 
-export default function Header(){
-    return(
-        <header className="bg-fundoheader py-10 px-4">
-            <nav>
-                <ul className="flex gap-[5.5em] list-none items-center justify-around">
-                    <li>
-                        <button className="border-4 border-azulclaro text-branco px-4 py-5 font-bold rounded- bg-azulclaro cursor-pointer flex items-center text-2xl gap-2.5 capitalize transition ease-in-out duration-1000  active:scale-95 tracking-widest">
-                            <img className="max-w-12" src={Chatbot}/>
-                            <span>Chatbot</span>    
-                        </button>
-                    </li>
-                    <li>
-                        <Link className="group flex gap-[5.5em] list-none items-center justify-around active:scale-95 tracking-widest relative" to="/Funcionalidade">
-                            <img className="max-w-12" src={Funcionalidade} alt=""/>
-                            <span className="tooltiptext absolute bg-white text-black p-1 rounded-lg z-10 invisible group-hover:visible text-xl">Funcionalidade</span>
-                        </Link>
-                    </li>
-                    <li>
-                        <Link className="group flex gap-[5.5em] list-none items-center justify-around active:scale-95 relative" id="item__link--ativo" to="/">
-                            <img className="max-w-12" src={Sobre} alt=""/>
-                            <span className="tooltiptext absolute bg-white text-black p-1 rounded-lg z-10 invisible group-hover:visible text-xl">Sobre</span>
-                        </Link>
-                    </li>
-                    <li>
-                        <a className="group flex gap-[5.5em] list-none items-center justify-around active:scale-95 relative">
-                            <img className="max-w-12" src={Logout} alt=""/>
-                            <span className="tooltiptext absolute bg-white text-black p-1 rounded-lg z-10 invisible group-hover:visible text-xl">Sair</span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-    )
+export default function Header() {
+  return (
+    <header className="flex bg-fundoheader items-center justify-between md:justify-center h-24 lg:h-32">
+        <div className="flex items-center">
+            <button className='md:border-4 md:border-azulclaro md:text-branco md:pr-11 md:ml-4 md:font-bold md:rounded-2xl md:bg-azulclaro md:cursor-pointer md:flex md:items-center md:text-2xl md:gap-2.5 md:capitalize md:active:scale-95 md:hover:tracking-widest duration-300 lg:ml-16 lg:pr-5'>
+                <img src={Chatbot} alt="" className="p-[1em] w-20 ml-4 md:m-0 md:p-[0.5em] lg:w-28"/>
+                <span className="hidden md:block">Chatbot</span>
+            </button>
+        </div>
+        
+        <div className="flex items-center gap-7 md:w-full md:justify-evenly">
+            <Link to="/Funcionalidade" className="group">
+                <img src={Funcionalidade} alt="" className="w-9/12 lg:w-12 md:hover:scale-105 md:active:scale-95 duration-300"/>
+                <p className="tooltiptext absolute bg-white text-black p-1 rounded-lg z-10 group-hover:visible text-xl">Funcionalidade</p>
+            </Link>
+            <Link to="/" className="group">
+                <img src={Sobre} alt="" className="w-9/12 lg:w-12 md:hover:scale-105 md:active:scale-95 duration-300"/>
+                <p className="tooltiptext absolute bg-white text-black p-1 rounded-lg z-10 group-hover:visible text-xl">Sobre</p>
+            </Link>
+            <Link to="#" className="group">
+                <img src={Logout} alt="" className="w-9/12 lg:w-12 md:hover:scale-105 md:active:scale-95 duration-300"/>
+                <p className="tooltiptext absolute bg-white text-black p-1 rounded-lg z-10 group-hover:visible text-xl">Sair</p>
+            </Link>
+        </div>
+    </header>
+  );
 }
