@@ -1,19 +1,33 @@
 import Mecanicos from './assets/mecanicos.svg'
 
 export default function Funcionalidade() {
-    return(
+    return (
         <>
             <section className="flex flex-col items-center">
                 <div className="flex justify-center w-full">
                     <h1 className="text-4xl font-bold mt-28 mb-10 text-azulclaro min-[460px]:text-5xl md:text-6xl lg:text-7xl">Funcionalidade</h1>
                 </div>
                 <div className="flex justify-center w-11/12 lg:w-4/5 xl:w-3/4">
-                    <span className="flex flex-col-reverse items-center text-azulescuro bg-cinza p-6 md:w-11/12 text-lg md:text-xl md:flex-row lg:text-2xl">O Descomplica Auto é um aplicativo baseado em inteligência artificial que visa ajudar usuários com problemas no veículo. 
-                        Disponível em plataformas web e como app para celular, ele permite que o cliente descreva os sintomas do carro, como “está saindo fumaça” ou “ouço barulhos”. 
+                    <span className="flex flex-col-reverse items-center text-azulescuro bg-cinza p-6 md:w-11/12 text-lg md:text-xl md:flex-row lg:text-2xl">O Descomplica Auto é um aplicativo baseado em inteligência artificial que visa ajudar usuários com problemas no veículo.
+                        Disponível em plataformas web e como app para celular, ele permite que o cliente descreva os sintomas do carro, como “está saindo fumaça” ou “ouço barulhos”.
                         O sistema então fornece um diagnóstico preliminar e uma estimativa de custo, facilitando e acelerando o processo de conserto.
-                        <img className='max-w-full w-96' src={Mecanicos} alt="Vetores de mecânicos consertando carro"/>
-                    </span>  
+                        <img className='max-w-full w-96' src={Mecanicos} alt="Vetores de mecânicos consertando carro" />
+                    </span>
                 </div>
+                <ul className='flex flex-wrap gap-[3em] mt-20'>
+                    <li className='bg-yellow-400 ml-4 py-[0.5em] px-[2em]'></li>
+                    <li className='bg-yellow-400 py-[0.5em] px-[2em]'></li>
+                    <li className='bg-yellow-400 py-[0.5em] px-[2em]'></li>
+                    <li className='bg-yellow-400 md:py-[0.5em] md:px-[2em]'></li>
+                    <li className='bg-yellow-400 md:py-[0.5em] md:px-[2em]'></li>
+                    <li className='bg-yellow-400 md:py-[0.5em] md:px-[2em]'></li>
+                    <li className='bg-yellow-400 md:py-[0.5em] md:px-[2em]'></li>
+                    <li className='bg-yellow-400 lg:py-[0.5em] lg:px-[2em]'></li>
+                    <li className='bg-yellow-400 lg:py-[0.5em] lg:px-[2em]'></li>
+                    <li className='bg-yellow-400 lg:py-[0.5em] lg:px-[2em]'></li>
+                    <li className='bg-yellow-400 lg:py-[0.5em] lg:px-[2em]'></li>
+                    <li className='bg-yellow-400 lg:py-[0.5em] lg:px-[2em]'></li>
+                </ul>
             </section>
         </>
     )

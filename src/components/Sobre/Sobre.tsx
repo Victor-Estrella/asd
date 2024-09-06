@@ -5,7 +5,21 @@ export default function Sobre() {
                 <div className="flex justify-center w-full">
                     <h1 className="text-5xl font-bold mt-28 mb-10 text-azulclaro md:text-6xl lg:text-7xl">Sobre nós</h1>
                 </div>
-                    <p className="flex text-azulescuro bg-cinza text-lg p-6 w-8/12 md:text-xl lg:text-2xl">Na Descomplica Auto, nosso objetivo é simplificar e agilizar a assistência aos motoristas. Desenvolvemos um aplicativo que acelera a resolução de problemas com veículos, oferecendo suporte imediato e eficiente. Seja para questões pequenas ou emergências, nosso aplicativo reduz a burocracia e proporciona uma ajuda rápida, tornando a experiência de dirigir mais tranquila e sem complicações.</p>
+                <p className="flex text-azulescuro bg-cinza text-lg p-6 w-8/12 md:text-xl lg:text-2xl">Na Descomplica Auto, nosso objetivo é simplificar e agilizar a assistência aos motoristas. Desenvolvemos um aplicativo que acelera a resolução de problemas com veículos, oferecendo suporte imediato e eficiente. Seja para questões pequenas ou emergências, nosso aplicativo reduz a burocracia e proporciona uma ajuda rápida, tornando a experiência de dirigir mais tranquila e sem complicações.</p>
+                <ul className='flex flex-wrap gap-[3em] mt-20'>
+                    <li className='bg-yellow-400 ml-4 py-[0.5em] px-[2em]'></li>
+                    <li className='bg-yellow-400 py-[0.5em] px-[2em]'></li>
+                    <li className='bg-yellow-400 py-[0.5em] px-[2em]'></li>
+                    <li className='bg-yellow-400 md:py-[0.5em] md:px-[2em]'></li>
+                    <li className='bg-yellow-400 md:py-[0.5em] md:px-[2em]'></li>
+                    <li className='bg-yellow-400 md:py-[0.5em] md:px-[2em]'></li>
+                    <li className='bg-yellow-400 md:py-[0.5em] md:px-[2em]'></li>
+                    <li className='bg-yellow-400 lg:py-[0.5em] lg:px-[2em]'></li>
+                    <li className='bg-yellow-400 lg:py-[0.5em] lg:px-[2em]'></li>
+                    <li className='bg-yellow-400 lg:py-[0.5em] lg:px-[2em]'></li>
+                    <li className='bg-yellow-400 lg:py-[0.5em] lg:px-[2em]'></li>
+                    <li className='bg-yellow-400 lg:py-[0.5em] lg:px-[2em]'></li>
+                </ul>
             </section>
         </>
     )
