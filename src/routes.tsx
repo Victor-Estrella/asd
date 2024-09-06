@@ -1,14 +1,16 @@
-import { Routes, Route } from "react-router-dom";
-import FuncionalidadePagina from "./pages/Funcionalidade/FuncionalidadePagina";
-import Equipe from "./pages/Equipe/Equipe";
+import { Route, Routes } from "react-router-dom";
+import Footer from "./components/Footer/Footer";
 import Cadastro from "./pages/Cadastro/Cadastro";
+import Equipe from "./pages/Equipe/Equipe";
+import FuncionalidadePagina from "./pages/Funcionalidade/FuncionalidadePagina";
 
-function MainRoutes(){
-    return(
+function MainRoutes() {
+    return (
         <Routes>
-            <Route path="/" element={<Equipe/>}/>
-            <Route path="/Funcionalidade" element={<FuncionalidadePagina/>}/>
-            <Route path="/Cadastro" element={<Cadastro/>}/>
+            <Route path="/" element={<Equipe />} />
+            <Route path="/Funcionalidade" element={<FuncionalidadePagina />} />
+            <Route path="/Cadastro" element={<Cadastro />} />
+            <Route path="/Footer" element={<Footer />} />
         </Routes>
     )
 }
