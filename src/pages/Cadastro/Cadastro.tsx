@@ -8,6 +8,7 @@ import Senha from "./assets/lock.svg"
 import Nome from "./assets/user.svg"
 import Telefone from "./assets/phone.svg"
 import './cadastro.css';
+import { Link } from 'react-router-dom'
 
 export default function Cadastro() {
     const [rightPanel , setRightPanel] = useState(true);
@@ -50,7 +51,7 @@ export default function Cadastro() {
                             </div>
                         </div>
                         <div className="container__botao">
-                            <a href="#" className="botao">Cadastrar</a>
+                            <Link to="/Funcionalidade" className="group">Cadastrar</Link>
                         </div>
                     </form>
                 </div>
@@ -77,7 +78,7 @@ export default function Cadastro() {
                             </div>
                         </div>
                         <div className="container__botao">
-                            <a href="#" className="botao">Entrar</a>
+                        <Link to="/Funcionalidade" className="group">Entrar</Link>
                         </div>
                     </form>
                 </div>

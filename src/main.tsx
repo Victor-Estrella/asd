@@ -1,11 +1,11 @@
 import ReactDOM from 'react-dom/client'
 import './variaveis.css'
-import {BrowserRouter} from "react-router-dom";
-import MainRoutes from './routes';
+import App from './App';
+import { StrictMode } from 'react';
 
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
-  <BrowserRouter>
-    <MainRoutes/>
-  </BrowserRouter>,
+  <StrictMode>
+    <App/>
+  </StrictMode>,
 )
