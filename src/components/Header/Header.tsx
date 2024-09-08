@@ -3,7 +3,6 @@ import Chatbot from "./assets/chatbot.svg";
 import Logout from "./assets/logout.svg";
 import Sobre from "./assets/sobre.svg";
 import { Link } from "react-router-dom";
-import "./header.css";
 
 export default function Header() {
   return (
@@ -18,15 +17,15 @@ export default function Header() {
         <div className="flex items-center gap-7 md:w-full md:justify-evenly">
             <Link to="/Funcionalidade" className="group">
                 <img src={Funcionalidade} alt="" className="w-9/12 lg:w-12 md:hover:scale-105 md:active:scale-95 duration-300"/>
-                <p className="tooltiptext absolute bg-white text-black p-1 rounded-lg z-10 group-hover:visible text-xl">Funcionalidade</p>
+                <p className="hidden absolute bg-white text-black p-1 rounded-lg z-10 lg:group-hover:block lg:mt-1 lg:ml-8 text-xl">Funcionalidade</p>
             </Link>
-            <Link to="/" className="group">
+            <Link to="/" className="group relative">
                 <img src={Sobre} alt="" className="w-9/12 lg:w-12 md:hover:scale-105 md:active:scale-95 duration-300"/>
-                <p className="tooltiptext absolute bg-white text-black p-1 rounded-lg z-10 group-hover:visible text-xl">Sobre</p>
+                <p className="hidden absolute bg-white text-black p-1 rounded-lg z-10 lg:group-hover:block lg:mt-1 lg:ml-8 text-xl">Sobre</p>
             </Link>
-            <Link to="#" className="group">
+            <Link to="#" className="group relative">
                 <img src={Logout} alt="" className="w-9/12 lg:w-12 md:hover:scale-105 md:active:scale-95 duration-300"/>
-                <p className="tooltiptext absolute bg-white text-black p-1 rounded-lg z-10 group-hover:visible text-xl">Sair</p>
+                <p className="hidden absolute bg-white text-black p-1 rounded-lg z-10 lg:group-hover:block lg:mt-1 lg:ml-8 text-xl">Sair</p>
             </Link>
         </div>
     </header>

@@ -1,3 +1,5 @@
+import Faixa from "../Faixa/Faixa";
+
 export default function Perguntas() {
     return (
         <section className="flex flex-col items-center w-full mt-20">
@@ -15,20 +17,7 @@ export default function Perguntas() {
                 <p className="text-sm shadow-pergunta p-4 w-11/12 bg-[#B0E0E6] text-black md:text-base md:w-2/5 lg:text-xl lg:w-80 lg:h-80"><span className="font-bold">O aplicativo pode ajudar em situações de emergência?</span><br /><br />
                     O nosso aplicativo oferece uma opção de autoajuda para soluções rápidas e também permite localizar mecânicos confiáveis na região do cliente</p>
             </div>
-            <ul className='flex flex-wrap gap-[3em] mt-20'>
-                <li className='bg-yellow-400 ml-4 py-[0.5em] px-[2em]'></li>
-                <li className='bg-yellow-400 py-[0.5em] px-[2em]'></li>
-                <li className='bg-yellow-400 py-[0.5em] px-[2em]'></li>
-                <li className='bg-yellow-400 md:py-[0.5em] md:px-[2em]'></li>
-                <li className='bg-yellow-400 md:py-[0.5em] md:px-[2em]'></li>
-                <li className='bg-yellow-400 md:py-[0.5em] md:px-[2em]'></li>
-                <li className='bg-yellow-400 md:py-[0.5em] md:px-[2em]'></li>
-                <li className='bg-yellow-400 lg:py-[0.5em] lg:px-[2em]'></li>
-                <li className='bg-yellow-400 lg:py-[0.5em] lg:px-[2em]'></li>
-                <li className='bg-yellow-400 lg:py-[0.5em] lg:px-[2em]'></li>
-                <li className='bg-yellow-400 lg:py-[0.5em] lg:px-[2em]'></li>
-                <li className='bg-yellow-400 lg:py-[0.5em] lg:px-[2em]'></li>
-            </ul>
+            <Faixa/>
         </section>
     )
 }

@@ -1,3 +1,4 @@
+import Faixa from '../Faixa/Faixa'
 import Mecanicos from './assets/mecanicos.svg'
 
 export default function Funcionalidade() {
@@ -14,20 +15,7 @@ export default function Funcionalidade() {
                         <img className='max-w-full w-96' src={Mecanicos} alt="Vetores de mecânicos consertando carro" />
                     </span>
                 </div>
-                <ul className='flex flex-wrap gap-[3em] mt-20'>
-                    <li className='bg-yellow-400 ml-4 py-[0.5em] px-[2em]'></li>
-                    <li className='bg-yellow-400 py-[0.5em] px-[2em]'></li>
-                    <li className='bg-yellow-400 py-[0.5em] px-[2em]'></li>
-                    <li className='bg-yellow-400 md:py-[0.5em] md:px-[2em]'></li>
-                    <li className='bg-yellow-400 md:py-[0.5em] md:px-[2em]'></li>
-                    <li className='bg-yellow-400 md:py-[0.5em] md:px-[2em]'></li>
-                    <li className='bg-yellow-400 md:py-[0.5em] md:px-[2em]'></li>
-                    <li className='bg-yellow-400 lg:py-[0.5em] lg:px-[2em]'></li>
-                    <li className='bg-yellow-400 lg:py-[0.5em] lg:px-[2em]'></li>
-                    <li className='bg-yellow-400 lg:py-[0.5em] lg:px-[2em]'></li>
-                    <li className='bg-yellow-400 lg:py-[0.5em] lg:px-[2em]'></li>
-                    <li className='bg-yellow-400 lg:py-[0.5em] lg:px-[2em]'></li>
-                </ul>
+                <Faixa/>
             </section>
         </>
     )

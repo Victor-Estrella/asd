@@ -1,3 +1,4 @@
+import Faixa from "../Faixa/Faixa"
 import Github from "./assets/github.png"
 import Henrique from "./assets/henrique.png"
 import Monteiro from "./assets/monteiro.jpg"
@@ -30,20 +31,7 @@ export default function Integrantes() {
                     <a href="https://github.com/Victor-Estrella" className="md:flex md:max-w-56" target="_blank"><img src={Github} alt="Ícone github" className="w-16 mt-1.5 ml-2.5" /></a>
                 </div>
             </div>
-            <ul className='flex flex-wrap gap-[3em] mt-20'>
-                <li className='bg-yellow-400 ml-4 py-[0.5em] px-[2em]'></li>
-                <li className='bg-yellow-400 py-[0.5em] px-[2em]'></li>
-                <li className='bg-yellow-400 py-[0.5em] px-[2em]'></li>
-                <li className='bg-yellow-400 md:py-[0.5em] md:px-[2em]'></li>
-                <li className='bg-yellow-400 md:py-[0.5em] md:px-[2em]'></li>
-                <li className='bg-yellow-400 md:py-[0.5em] md:px-[2em]'></li>
-                <li className='bg-yellow-400 md:py-[0.5em] md:px-[2em]'></li>
-                <li className='bg-yellow-400 lg:py-[0.5em] lg:px-[2em]'></li>
-                <li className='bg-yellow-400 lg:py-[0.5em] lg:px-[2em]'></li>
-                <li className='bg-yellow-400 lg:py-[0.5em] lg:px-[2em]'></li>
-                <li className='bg-yellow-400 lg:py-[0.5em] lg:px-[2em]'></li>
-                <li className='bg-yellow-400 lg:py-[0.5em] lg:px-[2em]'></li>
-            </ul>
+            <Faixa/>
         </section>
     )
 }
