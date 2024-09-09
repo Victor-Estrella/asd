@@ -1,23 +1,23 @@
 import { useState } from 'react'
-import Logo from "./assets/logo.svg"
+import { Link } from 'react-router-dom'
 import Apple from "./assets/apple.png"
 import Facebook from "./assets/facebook.png"
 import Google from "./assets/google.png"
-import Email from "./assets/mail.svg"
 import Senha from "./assets/lock.svg"
-import Nome from "./assets/user.svg"
+import Logo from "./assets/logo.svg"
+import Email from "./assets/mail.svg"
 import Telefone from "./assets/phone.svg"
-import './cadastro.css';
-import { Link } from 'react-router-dom'
+import Nome from "./assets/user.svg"
+import './cadastro.css'
 
 export default function Cadastro() {
-    const [rightPanel , setRightPanel] = useState(true);
+    const [rightPanel, setRightPanel] = useState(true);
 
     const registerButton = () => {
         setRightPanel(true);
     };
 
-    const loginButton= () => {
+    const loginButton = () => {
         setRightPanel(false);
     };
 
@@ -78,7 +78,7 @@ export default function Cadastro() {
                             </div>
                         </div>
                         <div className="container__botao">
-                        <Link to="/Funcionalidade" className="group">Entrar</Link>
+                            <Link to="/Funcionalidade" className="group">Entrar</Link>
                         </div>
                     </form>
                 </div>
