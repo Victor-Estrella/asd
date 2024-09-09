@@ -1,4 +1,4 @@
-import { useState, ChangeEvent, FormEvent } from 'react';
+import { ChangeEvent, FormEvent, useState } from 'react';
 
 type Car = {
   modelo: string;
@@ -26,8 +26,8 @@ export default function AddCarro() {
 
   const validarAno = (ano: number): string | null => {
     const anoAtual = new Date().getFullYear();
-    if (ano < 1980) {
-      return 'O ano não pode ser menor que 1980.';
+    if (ano < 1969) {
+      return 'O ano não pode ser menor que 1969.';
     } else if (ano > anoAtual + 1) {
       return 'O ano não pode ser maior que o ano atual mais um.';
     }
@@ -77,20 +77,20 @@ export default function AddCarro() {
         <div className="flex flex-col md:flex-row md:space-x-4">
           <div className="flex-1">
             <label htmlFor="marca" className="block text-sm font-medium text-gray-700 mb-1">Marca</label>
-            <input type="text" id="marca" name="marca" value={formData.marca} onChange={handleChange} required className="w-full border border-gray-300 rounded-md p-2"/>
+            <input type="text" id="marca" name="marca" value={formData.marca} onChange={handleChange} required className="w-full border border-gray-300 rounded-md p-2" />
           </div>
           <div className="flex-1">
             <label htmlFor="modelo" className="block text-sm font-medium text-gray-700 mb-1">Modelo</label>
-            <input type="text" id="modelo" name="modelo" value={formData.modelo} onChange={handleChange} required className="w-full border border-gray-300 rounded-md p-2"/>
+            <input type="text" id="modelo" name="modelo" value={formData.modelo} onChange={handleChange} required className="w-full border border-gray-300 rounded-md p-2" />
           </div>
         </div>
         <div>
           <label htmlFor="ano" className="block text-sm font-medium text-gray-700 mb-1">Ano</label>
-          <input type="number" id="ano" name="ano" value={formData.ano} onChange={handleChange} required className="w-full border border-gray-300 rounded-md p-2"/>
+          <input type="number" id="ano" name="ano" value={formData.ano} onChange={handleChange} required className="w-full border border-gray-300 rounded-md p-2" />
         </div>
         <div>
           <label htmlFor="quilometragem" className="block text-sm font-medium text-gray-700 mb-1">Quilometragem</label>
-          <input type="text" id="quilometragem" name="quilometragem" value={formData.quilometragem} onChange={handleChange} required className="w-full border border-gray-300 rounded-md p-2"/>
+          <input type="text" id="quilometragem" name="quilometragem" value={formData.quilometragem} onChange={handleChange} required className="w-full border border-gray-300 rounded-md p-2" />
         </div>
         {error && <div className="text-red-500 text-sm mb-4">{error}</div>}
         {error2 && <div className="text-red-500 text-sm mb-4">{error2}</div>}
