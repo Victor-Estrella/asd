@@ -1,5 +1,4 @@
-import LogoPorto from "./assets/porto-seguro-logo.png";
-import LogoFiap from "./assets/fiap-logo.png";
+
 import "./style.css";
 
 export default function Footer() {
@@ -32,13 +31,9 @@ export default function Footer() {
           <h2 className="text-base md:text-lg font-semibold uppercase pl-4">Endereço</h2>
           <div className="box relative mx-auto py-2 px-4 mt-4">
             <div className="mt-4">
-              <p className="font-semibold text-informacoes text-sm lg:text-xl lg:mt-4">R EMILIA MARENGO, 451 - VILA REGENTE FEIJO - SAO PAULO</p>
-              <p className="font-semibold text-informacoes text-sm lg:text-xl lg:mt-4">+333 76786</p>
-              <p className="font-semibold text-informacoes text-sm lg:text-xl lg:mt-4 break-words">prevencao.cartoes@portoseguro.com.br</p>
-            </div>
-            <div className="mt-8 flex flex-wrap gap-[1em] justify-evenly">
-              <img className="w-60" src={LogoPorto} alt="Logo Porto Seguro" />
-              <img className="w-60" src={LogoFiap} alt="Logo FIAP" />
+              <p className="font-semibold text-informacoes text-sm lg:text-xl mt-4">R EMILIA MARENGO, 451 - VILA REGENTE FEIJO - SAO PAULO</p>
+              <p className="font-semibold text-informacoes text-sm lg:text-xl mt-4">+333 76786</p>
+              <p className="font-semibold text-informacoes text-sm lg:text-xl mt-4 break-words">prevencao.cartoes@portoseguro.com.br</p>
             </div>
           </div>
         </div>

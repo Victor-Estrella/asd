@@ -1,4 +1,4 @@
-import { ChangeEvent, FormEvent, useState } from 'react';
+import { ChangeEvent, FormEvent, useState, useEffect } from 'react';
 
 type Car = {
   modelo: string;
@@ -18,6 +18,18 @@ export default function AddCarro() {
   const [cars, setCars] = useState<Car[]>([]);
   const [error, setError] = useState<string | null>(null);
   const [error2, setError2] = useState<string | null>(null);
+  const [editingIndex, setEditingIndex] = useState<number | null>(null);
+
+  useEffect(() => {
+    const storedCars = sessionStorage.getItem('cars');
+    if (storedCars) {
+      setCars(JSON.parse(storedCars));
+    }
+  }, []);
+
+  useEffect(() => {
+    sessionStorage.setItem('cars', JSON.stringify(cars));
+  }, [cars]);
 
   const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -59,7 +71,17 @@ export default function AddCarro() {
 
     setError(null);
     setError2(null);
-    setCars([...cars, formData]);
+
+    if (editingIndex !== null) {
+      const updatedCars = cars.map((car, index) =>
+        index === editingIndex ? formData : car
+      );
+      setCars(updatedCars);
+      setEditingIndex(null);
+    } else {
+      setCars([...cars, formData]);
+    }
+
     setFormData({
       modelo: '',
       ano: '',
@@ -68,10 +90,22 @@ export default function AddCarro() {
     });
   };
 
+  const handleEdit = (index: number) => {
+    setFormData(cars[index]);
+    setEditingIndex(index);
+  };
+
+  const handleDelete = (index: number) => {
+    const updatedCars = cars.filter((_, i) => i !== index);
+    setCars(updatedCars);
+  };
+
   return (
     <section className="w-11/12 max-w-4xl mx-auto p-4 bg-white rounded-lg shadow-xl my-32">
       <div className='w-full flex justify-center'>
-        <h2 className="text-xl lg:text-3xl font-bold mb-4">Adicionar Carro</h2>
+        <h2 className="text-xl lg:text-3xl font-bold mb-4">
+          {editingIndex !== null ? 'Editar Carro' : 'Adicionar Carro'}
+        </h2>
       </div>
       <form onSubmit={handleSubmit} className="space-y-4 mb-8">
         <div className="flex flex-col md:flex-row md:space-x-4">
@@ -90,11 +124,13 @@ export default function AddCarro() {
         </div>
         <div>
           <label htmlFor="quilometragem" className="block text-sm font-medium text-gray-700 mb-1">Quilometragem</label>
-          <input type="text" id="quilometragem" name="quilometragem" value={formData.quilometragem} onChange={handleChange} required className="w-full border border-gray-300 rounded-md p-2" />
+          <input type="number" id="quilometragem" name="quilometragem" value={formData.quilometragem} onChange={handleChange} required className="w-full border border-gray-300 rounded-md p-2" />
         </div>
         {error && <div className="text-red-500 text-sm mb-4">{error}</div>}
         {error2 && <div className="text-red-500 text-sm mb-4">{error2}</div>}
-        <button type="submit" className="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600">Adicionar Carro</button>
+        <button type="submit" className="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600">
+          {editingIndex !== null ? 'Salvar Alterações' : 'Adicionar Carro'}
+        </button>
       </form>
 
       {/* Lista de carros */}
@@ -106,6 +142,10 @@ export default function AddCarro() {
               <h4 className="font-semibold text-xl lg:text-2xl">{car.modelo} ({car.ano})</h4>
               <p className='text-black text-base'><strong>Marca:</strong> {car.marca}</p>
               <p className='text-black text-base'><strong>Quilometragem:</strong> {car.quilometragem} km</p>
+              <div className="mt-2 flex space-x-2">
+                <button onClick={() => handleEdit(index)} className="bg-yellow-500 text-white py-1 px-3 rounded-md hover:bg-yellow-600">Editar</button>
+                <button onClick={() => handleDelete(index)} className="bg-red-500 text-white py-1 px-3 rounded-md hover:bg-red-600">Apagar</button>
+              </div>
             </li>
           ))}
         </ul>
