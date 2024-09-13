@@ -30,6 +30,7 @@ export default function Asda() {
     const [loginPassword, setLoginPassword] = useState<string>('');
     const [loginErrors, setLoginErrors] = useState<LoginErrors>({});
 
+    // Register state
     const [registerName, setRegisterName] = useState<string>('');
     const [registerEmail, setRegisterEmail] = useState<string>('');
     const [registerPhone, setRegisterPhone] = useState<string>('');
@@ -115,7 +116,7 @@ export default function Asda() {
                         <button type="submit" className="bg-azulescuro p-6 text-branco font-bold text-2xl rounded-3xl md:text-3xl md:px-12 lg:text-4xl">Entrar</button>
                     </div>
                     <div className="mt-6">
-                        <button type="button" className="text-azulclaro font-bold text-xl lg:hidden">Criar conta</button>
+                        <button type="button" className="text-azulclaro font-bold text-xl">Criar conta</button>
                     </div>
                 </form>
             </section>
@@ -170,7 +171,7 @@ export default function Asda() {
                         <button type="submit" className="bg-azulescuro p-6 text-branco font-bold text-2xl rounded-3xl md:text-3xl md:px-12 lg:text-4xl">Cadastrar</button>
                     </div>
                     <div className="mt-5">
-                        <button type="button" className="text-azulclaro font-bold text-xl lg:hidden">Já tenho conta</button>
+                        <button type="button" className="text-azulclaro font-bold text-xl">Já tenho conta</button>
                     </div>
                 </form>
             </section>
