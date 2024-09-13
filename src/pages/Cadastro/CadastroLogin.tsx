@@ -1,7 +1,7 @@
-import { useState, FormEvent } from 'react';
+import { FormEvent, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import Login from '../../components/Login/Login';
 import Cadastro from '../../components/Cadastro/Cadastro';
+import Login from '../../components/Login/Login';
 import Overlay from '../../components/Overlay/Overlay';
 
 export default function CadastroLogin() {
@@ -95,7 +95,7 @@ export default function CadastroLogin() {
     };
 
     return (
-        <main className={`h-screen w-screen max-w-screen-min-2000 flex justify-center container ${rightPanel ? "right-panel-active" : ""} gap-4`} id="container">
+        <main className={`h-screen w-screen max-w-screen-min-2000 flex justify-center container ${rightPanel ? "right-panel-active" : ""}`} id="container">
             {/* Tela Mobile / Tablet */}
             <div className="lg:hidden w-full flex flex-col items-center mt-6">
                 {renderMobileView()}
