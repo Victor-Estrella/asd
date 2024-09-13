@@ -98,14 +98,11 @@ export default function CadastroLogin() {
         <main className={`h-screen w-screen max-w-screen-min-2000 flex justify-center container ${rightPanel ? "right-panel-active" : ""} gap-4`} id="container">
             {/* Tela Mobile / Tablet */}
             <div className="lg:hidden w-full flex flex-col items-center mt-6">
-                <div>
-
-                    {renderMobileView()}
-                </div>
+                {renderMobileView()}
             </div>
 
             {/* Tela Desktop */}
-            <div className="hidden lg:flex">
+            <div className="hidden lg:flex lg:w-screen">
                 <Login
                     email={loginEmail}
                     setEmail={setLoginEmail}
@@ -129,9 +126,8 @@ export default function CadastroLogin() {
                     onLoginClick={loginButton}
                 />
                 <Overlay
-                    rightPanel={rightPanel}
-                    loginButton={loginButton}
-                    registerButton={registerButton}
+                    onLoginClick={() => setRightPanel(false)}
+                    onRegisterClick={() => setRightPanel(true)}
                 />
             </div>
         </main>
