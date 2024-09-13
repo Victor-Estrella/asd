@@ -20,7 +20,7 @@ export default function Login({
 }) {
     return (
         <section className="my-8 w-1/2 lg:flex items-center justify-center z-10 lg:w-full lg:flex-grow lg:mx-2 lg:mr lg:my-0 desktop-only">
-            <form action="#" className='h-[106%] bg-branco flex items-center flex-col px-4 text-center drop-shadow-lg rounded-lg flex-grow' onSubmit={onSubmit}>
+            <form action="#" className='h-full bg-branco flex items-center flex-col px-4 text-center drop-shadow-lg rounded-lg flex-grow' onSubmit={onSubmit}>
                 <div className="w-full flex justify-end mt-8">
                     <img src={Logo} alt="Logo da Descomplica Auto" className='h-10 mb-6 mt-8' />
                 </div>
