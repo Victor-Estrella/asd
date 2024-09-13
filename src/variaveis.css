@@ -1,16 +1,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
-  --fundo: linear-gradient(310deg, #0000ff 0%, #0505d9 100%);
-  --azul: #0000ff;
-  --azul-escuro: #001d5c;
-  --azul-claro: #01a1fc;
-  --branco: #ffffff;
-  --cinza: #d9d9d9;
-  --creme: #fbf2e7;
-  --fonte: "Montserrat", sans-serif;
-  --preto: #000000;
-}
-
